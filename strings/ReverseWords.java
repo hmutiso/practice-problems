@@ -3,6 +3,13 @@ import static org.junit.Assert.*;
 public class ReverseWords {
 	
 	/*
+         * Problem: Given a string, reverse the words in the string. Assume
+         * the string contains only letters and spaces, and words are
+         * separated by a space.
+         *
+         * Example: Given an input of "pudding chocolate love I", your function
+         * should return "I love chocolate pudding".
+         *
 	 * Time complexity: O(n)
 	 * Space complexity: O(n) - needed to allocate the 'chars' array, as 
 	 * Java Strings are immutable.
@@ -65,6 +72,10 @@ public class ReverseWords {
 		String test6 = "cake pound steal";
 		String expected6 = "steal pound cake";
 		assertTrue(expected6.equals(reverseWordsInString(test6)));
+
+		String test7 = "pudding chocolate love I";
+		String expected7 = "I love chocolate pudding";
+		assertTrue(expected7.equals(reverseWordsInString(test7)));
 
 		System.out.println("All tests passed!");
 	}
