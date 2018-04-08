@@ -52,7 +52,7 @@ public class CountingSortScores {
         for (int i = 0; i < test1.length; i++) {
             assertEquals(results1[i], expected1[i]);
         }
-        
+
         // Test 2
         int[] test2 = new int[] {1, 2, 3, 4, 5, 6, 7, 8};
         int highest2 = 10;
@@ -61,7 +61,7 @@ public class CountingSortScores {
         for (int i = 0; i < test2.length; i++) {
             assertEquals(results2[i], expected2[i]);
         }
-        
+
         // Test 3
         int[] test3 = new int[] {5};
         int highest3 = 10;
@@ -70,7 +70,7 @@ public class CountingSortScores {
         for (int i = 0; i < test3.length; i++) {
             assertEquals(results3[i], expected3[i]);
         }
-        
+
         // Test 4
         int[] test4 = new int[] {};
         int highest4 = 6;
@@ -79,6 +79,6 @@ public class CountingSortScores {
         for (int i = 0; i < test4.length; i++) {
             assertEquals(results4[i], expected4[i]);
         }
-        
+
         System.out.println("All tests passed!");
     }
