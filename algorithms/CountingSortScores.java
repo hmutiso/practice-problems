@@ -6,18 +6,18 @@ public class CountingSortScores {
      * sortScores() cannot handle arrays with negative numbers.
      * Time complexity: O(n)
      * Space complexity: O(n), since we allocate a new array of sorted scores.
-     * This O(n) cost could be eliminated if we overwrite the input array, but
-     * that is not ideal in some scenarios.
+     * The O(n) space cost could be eliminated if we overwrite the input array,
+     * but that is not ideal in certain cases.
      *
      * Note the above time and space complexity assumes highestPossibleScore is
      * a constant. If highestPossibleScore is NOT a constant, what is the time
      * and space complexity?
      * 	    Space complexity: O(n + k), where k is the range of possible values
-     * 	        - O(n) for allocating the sorted array
-     * 		- O(k) for allocating the array of buckets
+     * 	        - O(n) : allocating the result (sorted) array of length n
+     * 		- O(k) : allocating the bucket array of length k
      * 	    Time complexity: O(n + k) :
-     * 		- O(n) for populating the sorted array
-     * 		- O(k) for populating the buckets array
+     * 		- O(n) : iterating over the input array + populating the result array
+     * 		- O(k) : initializing the buckets array with all zeros.
      */
     public static int[] sortScores(int[] unsortedScores, int highestPossibleScore) {
         if (unsortedScores == null || highestPossibleScore < 0) {
